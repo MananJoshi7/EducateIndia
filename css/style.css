@@ -1,0 +1,299 @@
+*
+{
+    margin: 0;
+    padding: 0;
+}
+html
+{
+    scroll-behavior: smooth;
+}
+.navbar
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: sticky;
+    top: 0;
+    cursor: pointer;
+}
+.nav-list
+{
+    width: 70%;
+    display: flex;
+    align-items: center;
+}
+.nav-list li
+{
+    list-style: none;
+    padding: 26px 30px;
+    cursor: pointer;
+}
+.nav-list li a
+{
+    text-decoration: none;
+    color: aliceblue;
+    font-size: 20px;
+    font-family: 'Ubuntu',sans-serif;
+}
+.nav-list li a:hover
+{
+    color: gray;
+}
+.rightNav
+{
+    text-align: right;
+    width: 30%;
+    padding: 0 23px;
+}
+.logo
+{
+    width: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.logo img
+{
+    width: 3.5rem;
+    height: 3.5rem;
+    border: 3px solid white;
+    border-radius: 50%;
+}
+#search
+{
+    padding: 5px;
+    font-size: 17px;
+    border: 2px solid grey;
+    border-radius: 9px;
+}
+.background
+{
+    background: rgba(0, 0, 0,0.7) url('../image/img1.jpg');
+    background-size: cover;
+    background-blend-mode: darken;
+    object-fit: cover;
+}
+.box-main
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    max-width: 50%;
+    margin: auto;
+    height: 80%;
+}
+.firstSection
+{
+    height: 100vh;
+    width: 100%;
+}
+
+/* vinit changed width */
+.secondHalf img
+{
+    width: 20rem;
+    border-radius: 35px;
+    margin: auto;
+    padding: 20px;
+}
+.firstHalf
+{
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.text-big
+{
+    font-size: 38px;
+    justify-content: center;
+
+}
+
+/* vinit changes font-size, line-height */
+.text-small
+{
+    font-size: 1rem;
+    justify-content: center;
+    line-height: 1.7;
+    align-items: center;
+}
+.btn
+{
+    padding: 8px 20px;
+    margin: .8rem .4rem;
+    border: 2px solid white;
+    border-radius: 8px;
+    background: none;
+    color: white;
+    cursor: pointer;
+    font-family: 'Ubuntu',sans-serif;
+    font-size: 20px;
+}
+.btn-sm
+{
+    padding: 6px 10px;
+    vertical-align: middle;
+    font-size: 16px;
+}
+.section
+{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    max-width: 80%;
+    margin: auto;
+    font-family: 'Ubuntu', sans-serif;
+    padding: 21px;
+}
+.section-left
+{
+    flex-direction: row-reverse;
+}
+
+/* display block removed by vinit */
+.thumbnail img
+{
+    width: 350px;
+    border-radius: 7px;
+}
+.paras
+{
+    padding: 0px 65px;
+}
+.sectionTag
+{
+    padding: 16px 0;
+}
+.contact
+{
+    background-color: #f0efef;
+    height: 650px;
+}
+.text-center
+{
+    text-align: center;
+    padding-top: 30px;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 34px;
+}
+.form
+{
+    max-width: 62%;
+    margin: 25px auto;
+}
+.form-input
+{
+    width: 100%;
+    font-size: 19px;
+    border: 2px solid grey;
+    border-radius: 7px;
+    margin: 11px 0;
+    padding: 5px 13px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.btn-dark
+{
+    color: black;
+    border: 2px solid grey;
+}
+.text-footer
+{
+    text-align: center;
+    font-family: 'Ubuntu', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 30px 0;
+    color: white;
+}
+.burger
+{
+    display: none;
+    position: absolute;
+    cursor: pointer;
+    right: 5%;
+    top: 15px;
+}
+.line
+{
+    width: 33px;
+    background-color: white;
+    height: 4px;
+    margin: 5px 3px;
+}
+@media only screen and (max-width: 1084px)
+{
+    .nav-list
+    {
+        flex-direction: column;
+    }
+    .navbar
+    {
+        height: 477px;
+        flex-direction: column;
+        transition: all 0.7s ease-out;
+    }
+    .rightNav
+    {
+        text-align: center;
+    }
+    .box-main
+    {
+        flex-direction: column-reverse;
+        max-width: 50%;
+    }
+    #search
+    {
+        width: 100%;
+    }
+    .burger
+    {
+        display: block;
+    }
+    .h-nav-resp
+    {
+        height: 72px;
+    }
+    .v-class-resp
+    {
+        opacity: 0;
+    }
+    /* vinit changes */
+    .secondHalf img {
+        width: 20rem;
+    }
+    .section
+    {
+        flex-direction: column-reverse;
+    }
+    .text-small
+    {
+        text-align: center;
+        font-size: 1rem;
+        font-weight: 300;
+    }
+    .text-big
+    {
+        text-align: center;
+        font-size: 2rem;
+        font-weight: 600;
+        margin-bottom: .6rem;
+    }
+    .buttons
+    {
+        display: flex;
+        justify-content: center;
+    }
+    .paras
+    {
+        padding: 0px;
+    }
+    body
+    {
+        width: 100dvh;
+    }
+}
